@@ -19,6 +19,14 @@ def handle(msg):
     
 # Entertainment
 
+if '/speak' in command:
+   speak=re.sub("/speak","", command)
+   bot.sendVoice(chat_id,"https://translate.google.com/translate_tts?ie=UTF-8&tl=pt-BR&client=tw-ob&q={}".format(speak), reply_to_message_id=msg["message_id"])
+
+ if '/dog' in command:
+   dog=re.sub("/dog","", command)
+   bot.sendPhoto(chat_id,"http://dogr.io/{}.png?split=false&.png".format(dog),reply_to_message_id=msg["message_id"])
+   
  if '/dice' in command:
    dice=(random.randint(2,12))
    bot.sendMessage(chat_id,"The dice spin and stopped in <b>{}</b>".format(dice), "HTML", reply_to_message_id=msg["message_id"])
