@@ -1,5 +1,54 @@
 # YuSrobot python
 
+### Bot Commands
+
+<table>
+  <thead>
+    <tr>
+      <td><strong>Name</strong></td>
+      <td><strong>Description</strong></td>
+      <td><strong>Usage</strong></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dog</td>
+      <td>Photo of the dog with your text.</td>
+      <td>/dog [term]: Receive a photo of the dog with your text.</td>
+    </tr>
+    <tr>
+      <td>Dice</td>
+      <td>Throw two dice and find out the result.</td>
+      <td>/dice: Send random number.</td>
+    </tr>
+    <tr>
+      <td>Id</td>
+      <td>Know your id and the id of chat group.</td>
+      <td>/id: Return your ID and the chat id if you are in one.</td>
+    </tr>
+    <tr>
+      <td>Img</td>
+      <td>Search image with Yandex API and sends it.</td>
+      <td>/img [term]: Random search an image with Yandex API.</td>
+    </tr>    
+    <tr>
+      <td>Echo</td>
+      <td>Echo your message.</td>
+      <td>/echo [whatever]: Echoes the msg.</td>
+    </tr>
+    <tr>
+      <td>Speak</td>
+      <td>Your text in audio.</td>
+      <td>/speak [Term]:Turn your message into audio.</td>
+    </tr>
+    <tr>
+      <td>Support</td>
+      <td>Send your message to support group.</td>
+      <td>/support [your problem]: tell me your problem.</td>
+    </tr>
+   </tbody>
+</table>
+
 ## Instructions:
 
 * Step 1 - Downloading Project
@@ -153,39 +202,6 @@ $ sh run.sh
 
 ### If you did everything right, the bot will send a message to the support group
 
-## Bot Commands
-
-<table>
-  <thead>
-    <tr>
-      <td><strong>Name</strong></td>
-      <td><strong>Description</strong></td>
-      <td><strong>Usage</strong></td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Dice</td>
-      <td>Throw two dice and find out the result</td>
-      <td>/dice: Send random number</td>
-    </tr>
-    <tr>
-      <td>Echo</td>
-      <td>Echo your message</td>
-      <td>/echo [whatever]: Echoes the msg</td>
-    </tr>
-    <tr>
-      <td>Support</td>
-      <td>Send your message to support group</td>
-      <td>/support [your problem]: tell me your problem</td>
-    </tr>
-    <tr>
-      <td>Img</td>
-      <td>Search image with Yandex API and sends it</td>
-      <td>/img [term]: Random search an image with Yandex API</td>
-    </tr>
-   </tbody>
-</table>
 
 ### Credits for [A-Z]
 

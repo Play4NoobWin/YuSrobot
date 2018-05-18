@@ -19,10 +19,6 @@ def handle(msg):
     
 # Entertainment
 
-if '/speak' in command:
-   speak=re.sub("/speak","", command)
-   bot.sendVoice(chat_id,"https://translate.google.com/translate_tts?ie=UTF-8&tl=pt-BR&client=tw-ob&q={}".format(speak), reply_to_message_id=msg["message_id"])
-
  if '/dog' in command:
    dog=re.sub("/dog","", command)
    bot.sendPhoto(chat_id,"http://dogr.io/{}.png?split=false&.png".format(dog),reply_to_message_id=msg["message_id"])
@@ -34,6 +30,11 @@ if '/speak' in command:
  if "/echo" in command:
    echo=re.sub("/echo","", command)
    bot.sendMessage(chat_id, "{}".format(echo), "Markdown", reply_to_message_id=msg["message_id"])
+  
+ if '/speak' in command:
+   speak=re.sub("/speak","", command)
+   bot.sendVoice(chat_id,"https://translate.google.com/translate_tts?ie=UTF-8&tl=pt-BR&client=tw-ob&q={}".format(speak), reply_to_message_id=msg["message_id"])
+
 
 # utility
   
@@ -46,6 +47,10 @@ if '/speak' in command:
    support=re.sub("/support","", command)
    bot.sendMessage(Mainchat, "{}".format(support), "HTML")
    bot.sendMessage(chat_id, "Message delivered!", "HTML", reply_to_message_id=msg["message_id"])
+  
+ if '/id' in command:
+   info_id = "<b>Name:</b> {}\n<b>Username:</b> {}\n<b>User ID:</b> {}\n<b>Chat Type:</b> {}\n<b>Chat ID:</b> {}"
+   bot.sendMessage(chat_id, info_id.format(from_first_name, from_username, from_id, chat_type, chat_id), "HTML", reply_to_message_id=msg["message_id"])
  
  if '/img' in command:
    img=re.sub("/img","", command)
