@@ -1,0 +1,1 @@
+pip3 install telepot && pip3 install PythonColorize
