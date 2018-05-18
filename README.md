@@ -21,6 +21,11 @@
       <td>Throw two dice and find out the result.</td>
       <td>/dice: Send random number.</td>
     </tr>
+     <tr>
+      <td>Echo</td>
+      <td>Echo your message.</td>
+      <td>/echo [whatever]: Echoes the msg.</td>
+    </tr>
     <tr>
       <td>Id</td>
       <td>Know your id and the id of chat group.</td>
@@ -31,11 +36,6 @@
       <td>Search image with Yandex API and sends it.</td>
       <td>/img [term]: Random search an image with Yandex API.</td>
     </tr>    
-    <tr>
-      <td>Echo</td>
-      <td>Echo your message.</td>
-      <td>/echo [whatever]: Echoes the msg.</td>
-    </tr>
     <tr>
       <td>Speak</td>
       <td>Your text in audio.</td>
@@ -66,19 +66,25 @@ $ git@github.com:Player4NoobWinner/YuSrobot.git
 
 Open the terminal "CTRL + ALT + T"
 
+Go to the YuSrobot folder
+
 ```
-$ sudo apt-get nano
-$ sudo apt-get install python
-$ sudo apt-get install python3-pip
+cd YuSrobot/
+$ sh run.sh
+Press 2 and confirm
 ```
 
 * Step 3 - Installing bot requirements
+
+Open the terminal "CTRL + ALT + T"
+
 
 Go to the YuSrobot folder
 
 ```
 cd YuSrobot/
-$ sudo sh install.sh
+$ sh run.sh
+Press 3 and confirm
 ```
 
 * Step 4 - Creating a new bot
@@ -198,6 +204,7 @@ Go to the YuSrobot folder
 ```
 cd YuSrobot/
 $ sh run.sh
+Press 1 and confirm
 ```
 
 ### If you did everything right, the bot will send a message to the support group
