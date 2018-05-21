@@ -21,7 +21,12 @@
       <td>Throw two dice and find out the result.</td>
       <td>/dice: Send random number.</td>
     </tr>
-     <tr>
+  	<tr>
+      <td>Danbooru</td>
+      <td>Gets a random image from danbooru.</td>
+      <td>/danb: gets a random fresh image from danbooru.</td>
+    </tr>
+    <tr>
       <td>Echo</td>
       <td>Echo your message.</td>
       <td>/echo [whatever]: Echoes the msg.</td>

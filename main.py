@@ -23,6 +23,10 @@ def handle(msg):
  if '/dice' in command:
    dice=(random.randint(2,12))
    bot.sendMessage(chat_id,"The dice spin and stopped in <b>{}</b>".format(dice), "HTML", reply_to_message_id=msg["message_id"])
+	
+ if '/danb' in command:
+   danb=(random.randint(1,999999))
+   bot.sendPhoto(chat_id,"https://danbooru.donmai.us/posts/{}".format(danb), reply_to_message_id=msg["message_id"])
 
  if "/echo" in command:
    echo=re.sub("/echo","", command)
