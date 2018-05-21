@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 #-*- coding: utf-8 -*-
 # encoding: utf-8
-import telepot, time, re, random, json
-from telepot.namedtuple import InlineKeyboardMarkup, InlineKeyboardButton
-from config import *
-from PythonColorize import *
+from imports import *
 def handle(msg):
  content_type, chat_type, chat_id = telepot.glance(msg)
  chat_id = msg['chat']['id']
