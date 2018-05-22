@@ -11,6 +11,16 @@
     </tr>
   </thead>
   <tbody>
+     <tr>
+      <td>Boobs</td>
+      <td>Gets a random boobs pic.</td>
+      <td>/boobs: Get a boobs NSFW image.</td>
+    </tr>
+    <tr>
+      <td>Butts</td>
+      <td>Gets a random butts pic.</td>
+      <td>/butts: Get a butts NSFW image.</td>
+    </tr>
     <tr>
       <td>Dog</td>
       <td>Photo of the dog with your text.</td>

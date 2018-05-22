@@ -47,7 +47,7 @@ main()
  }
  install_sb()
  {
-   pip3 install telepot && pip3 install PythonColorize
+   pip3 install telepot && pip3 install PythonColorize && pip3 install urllib3
    for file in *
    do
    sh run.sh

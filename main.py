@@ -16,6 +16,18 @@ def handle(msg):
     
 # Entertainment
 
+ if '/boobs' in command:
+   boobs = urllib.request.urlopen('http://api.oboobs.ru/noise/1')
+   boobs = json.loads(boobs.read())
+   boobs = boobs[0]["preview"]
+   bot.sendPhoto(chat_id,"http://media.oboobs.ru/{}".format(boobs), reply_to_message_id=msg["message_id"])
+    
+ if '/butts' in command:
+   butts = urllib.request.urlopen('http://api.obutts.ru/noise/1')
+   butts = json.loads(butts.read())
+   butts = butts[0]["preview"]
+   bot.sendPhoto(chat_id,"http://media.obutts.ru/{}".format(butts), reply_to_message_id=msg["message_id"])
+
  if '/dog' in command:
    dog=re.sub("/dog","", command)
    bot.sendPhoto(chat_id,"http://dogr.io/{}.png?split=false&.png".format(dog),reply_to_message_id=msg["message_id"])
