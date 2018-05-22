@@ -23,13 +23,35 @@ main()
      run_bot
      ;;
     "2")
-     install_sr
+     menu2
      ;;
      "3")
      install_sb
      ;;
   esac
  }
+ menu2()
+ {
+   clear
+   echo "Choose Your SO:"
+   echo "1 - Arch"
+   echo "2 - Ubuntu"
+   echo "3 - Return To The Menu"
+   echo "Or  press enter to exit"
+   read option;
+   case $option in 
+   "1")
+   install_arch
+     ;;
+    "2")
+   install_ubuntu
+     ;;
+    "3")
+   clear
+   main
+     ;;
+  esac
+} 
  run_bot()
  {
    for file in *
@@ -37,20 +59,16 @@ main()
    python3 main.py
    done
  }
- install_sr()
+ install_arch()
  {
-   sudo apt-get install nano && sudo apt-get install python && sudo apt-get install python3-pip
-   for file in *
-   do
-   sh run.sh
-   done
+  clear && sudo pacman -S python && sudo pacman -S python-pip
+ }
+ install_ubuntu()
+ {
+  clear && sudo apt-get install nano && sudo apt-get install python && sudo apt-get install python3-pip
  }
  install_sb()
  {
-   pip3 install telepot && pip3 install PythonColorize && pip3 install urllib3
-   for file in *
-   do
-   sh run.sh
-   done
+   clear && pip3 install telepot --user && pip3 install PythonColorize --user && pip3 install urllib3 --user
  }
 main

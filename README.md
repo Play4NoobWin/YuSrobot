@@ -68,7 +68,7 @@
 
 * Step 1 - Downloading Project
 
-### Ubuntu
+### Ubuntu / Arch
 
 ```
 HTTPS
