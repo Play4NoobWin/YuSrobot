@@ -55,12 +55,12 @@
       <td>Img</td>
       <td>Search image with Yandex API and sends it.</td>
       <td>/img [term]: Random search an image with Yandex API.</td>
-    </tr> 
+    </tr>
     <tr>
       <td>Qr</td>
       <td>Given a text it returns a qr code.</td>
       <td>/qr [term]: Returns a black and white qr code.</td>
-    </tr> 
+    </tr>
     <tr>
       <td>Speak</td>
       <td>Your text in audio.</td>
@@ -71,6 +71,12 @@
       <td>Send your message to support group.</td>
       <td>/support [your problem]: tell me your problem.</td>
     </tr>
+    <tr>
+    <td>Wikipedia</td>
+    <td>Searches Wikipedia and send results.</td>
+    <td>/wiki [terms]: Searches wiki and send results.</td>
+    </tr>
+    <td>
    </tbody>
 </table>
 
@@ -134,7 +140,7 @@ For further explanation https://core.telegram.org/bots#privacy-mode
 
 Use the /mybots, The [BotFather](https://telegram.me/botfather) will ask you what do you want, Choose the bot, API token and copy your token, e.g. 554647780:AAGYXfcuSAiXYc0lEj-dSM9aGyM0y7WI9Po
 
-* Step 7 - Adding bot token 
+* Step 7 - Adding bot token
 
 Go to the YuSrobot folder
 

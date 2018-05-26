@@ -1,19 +1,19 @@
 #!/bin/bash
 clear
-echo " **    **          ********                 **                 **  
-//**  **          **//////                 /**                /**  
+echo " **    **          ********                 **                 **
+//**  **          **//////                 /**                /**
  //****   **   **/**        ******  ****** /**       ******  ******
-  //**   /**  /**/*********//**//* **////**/******  **////**///**/ 
-   /**   /**  /**////////** /** / /**   /**/**///**/**   /**  /**  
-   /**   /**  /**       /** /**   /**   /**/**  /**/**   /**  /**  
-   /**   //****** ******** /***   //****** /****** //******   //** 
-   //     ////// ////////  ///     //////  /////    //////     // " 
+  //**   /**  /**/*********//**//* **////**/******  **////**///**/
+   /**   /**  /**////////** /** / /**   /**/**///**/**   /**  /**
+   /**   /**  /**       /** /**   /**   /**/**  /**/**   /**  /**
+   /**   //****** ******** /***   //****** /****** //******   //**
+   //     ////// ////////  ///     //////  /////    //////     // "
 
 
 main()
   {
     echo "Choose an option:"
-    echo "1 - Start Bot"    
+    echo "1 - Start Bot"
     echo "2 - Install System Requeriments"
     echo "3 - Install Bot Requeriments"
     echo "Or press enter to exit"
@@ -39,7 +39,7 @@ main()
    echo "3 - Return To The Menu"
    echo "Or  press enter to exit"
    read option;
-   case $option in 
+   case $option in
    "1")
    install_arch
      ;;
@@ -51,7 +51,7 @@ main()
    main
      ;;
   esac
-} 
+}
  run_bot()
  {
    for file in *
@@ -69,6 +69,6 @@ main()
  }
  install_sb()
  {
-   clear && pip3 install telepot --user && pip3 install PythonColorize --user && pip3 install urllib3 --user
+   clear && pip3 install telepot --user && pip3 install PythonColorize --user && pip3 install urllib3 --user && pip3 install requests --user
  }
 main
