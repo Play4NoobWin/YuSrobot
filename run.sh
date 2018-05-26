@@ -69,6 +69,6 @@ main()
  }
  install_sb()
  {
-   clear && pip3 install telepot --user && pip3 install PythonColorize --user && pip3 install urllib3 --user && pip3 install requests --user
+   clear && pip3 install telepot --user && pip3 install PythonColorize --user && pip3 install urllib3 --user && pip3 install requests --user && pip3 install wikipedia --user
  }
 main
