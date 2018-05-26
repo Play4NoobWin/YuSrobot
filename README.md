@@ -55,7 +55,12 @@
       <td>Img</td>
       <td>Search image with Yandex API and sends it.</td>
       <td>/img [term]: Random search an image with Yandex API.</td>
-    </tr>    
+    </tr> 
+    <tr>
+      <td>Qr</td>
+      <td>Given a text it returns a qr code.</td>
+      <td>/qr [term]: Returns a black and white qr code.</td>
+    </tr> 
     <tr>
       <td>Speak</td>
       <td>Your text in audio.</td>

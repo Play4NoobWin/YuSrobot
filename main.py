@@ -54,7 +54,6 @@ def handle(msg):
    speak=re.sub("/speak","", command)
    bot.sendVoice(chat_id,"https://translate.google.com/translate_tts?ie=UTF-8&tl=pt-BR&client=tw-ob&q={}".format(speak), reply_to_message_id=msg["message_id"])
 
-
 # utility
   
  if '/start' in command:
@@ -74,6 +73,10 @@ def handle(msg):
  if '/img' in command:
    img=re.sub("/img","", command)
    bot.sendPhoto(chat_id,"https://yandex.com/images/search?text={}".format(img), "Result for <b>{}</b>".format(img), "HTML", reply_to_message_id=msg["message_id"])
+    
+ if '/qr' in command:
+   qr=re.sub("/qr","", command)
+   bot.sendPhoto(chat_id,"http://api.qrserver.com/v1/create-qr-code/?data={}&size=600x600".format(qr), "Result for <b>{}</b>".format(qr), "HTML", reply_to_message_id=msg["message_id"])  
 
 # extra
 
