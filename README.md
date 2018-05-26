@@ -22,6 +22,11 @@
       <td>/butts: Get a butts NSFW image.</td>
     </tr>
     <tr>
+      <td>Chuck</td>
+      <td>Get random Chuck Norris jokes.</td>
+      <td>/chuck: Receive a random Chuck Norris message.</td>
+    </tr>
+    <tr>
       <td>Dog</td>
       <td>Photo of the dog with your text.</td>
       <td>/dog [term]: Receive a photo of the dog with your text.</td>

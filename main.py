@@ -28,6 +28,12 @@ def handle(msg):
    butts = butts[0]["preview"]
    bot.sendPhoto(chat_id,"http://media.obutts.ru/{}".format(butts), reply_to_message_id=msg["message_id"])
 
+ if '/chuck' in command:
+   chuck = urllib.request.urlopen('http://api.icndb.com/jokes/random')
+   chuck = json.loads(chuck.read())
+   chuck = chuck["value"]["joke"]
+   bot.sendMessage(chat_id,"{}".format(chuck), reply_to_message_id=msg["message_id"])
+  
  if '/dog' in command:
    dog=re.sub("/dog","", command)
    bot.sendPhoto(chat_id,"http://dogr.io/{}.png?split=false&.png".format(dog),reply_to_message_id=msg["message_id"])
