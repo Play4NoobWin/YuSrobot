@@ -1,4 +1,4 @@
-import telepot, time, re, random, json, urllib, requests, wikipedia
+import telepot, time, re, random, os, json, urllib, requests, wikipedia
 from urllib3 import *
 from config import *
 from PythonColorize import *
