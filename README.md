@@ -58,7 +58,7 @@
     </tr>
     <tr>
       <td>Mipsum</td>
-      <td>return random text from mipsum.</td>
+      <td>Return random text from mipsum.</td>
       <td>/mipsum.</td>
     </tr>
     <tr>
