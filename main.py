@@ -57,10 +57,15 @@ def handle(msg):
   mipsum = response_json['frase']
   bot.sendMessage(chat_id, mipsum, reply_to_message_id=msg["message_id"])
 
- if '/speak' in command:
-   speak=re.sub("/speak","", command)
-   bot.sendVoice(chat_id,"https://translate.google.com/translate_tts?ie=UTF-8&tl=pt-BR&client=tw-ob&q={}".format(speak), reply_to_message_id=msg["message_id"])
-
+ if "/speak" in command:
+   fale=re.sub("/speak","", command)
+   AUDIO = gTTS(fale, lang="pt")
+   AUDIO.save('audio.ogg')
+   audio = open('audio.ogg', 'rb')
+   bot.sendAudio(chat_id, audio)
+   audio.close()
+   os.remove('audio.ogg')
+   
  if "/wiki" in command:
    wiki=re.sub("/wiki","", command)
    wikipedia.set_lang ("en")
