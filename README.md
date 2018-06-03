@@ -59,7 +59,7 @@
     <tr>
       <td>Mipsum</td>
       <td>Return random text from mipsum.</td>
-      <td>/mipsum.</td>
+      <td>/mipsum. Random text from mipsum</td>
     </tr>
     <tr>
       <td>Qr</td>

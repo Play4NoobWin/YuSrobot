@@ -50,7 +50,7 @@ def handle(msg):
    echo=re.sub("/echo","", command)
    bot.sendMessage(chat_id, "{}".format(echo), "Markdown", reply_to_message_id=msg["message_id"])
  
- if '/mipsum' in texto:
+ if '/mipsum' in command:
   url = 'https://mipsum.herokuapp.com/frases/random'
   response = requests.get(url)
   response_json = response.json()
