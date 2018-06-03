@@ -49,6 +49,13 @@ def handle(msg):
  if "/echo" in command:
    echo=re.sub("/echo","", command)
    bot.sendMessage(chat_id, "{}".format(echo), "Markdown", reply_to_message_id=msg["message_id"])
+ 
+ if '/mipsum' in texto:
+  url = 'https://mipsum.herokuapp.com/frases/random'
+  response = requests.get(url)
+  response_json = response.json()
+  mipsum = response_json['frase']
+  bot.sendMessage(chat_id, mipsum, reply_to_message_id=msg["message_id"])
 
  if '/speak' in command:
    speak=re.sub("/speak","", command)

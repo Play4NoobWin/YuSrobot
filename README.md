@@ -57,6 +57,11 @@
       <td>/img [term]: Random search an image with Yandex API.</td>
     </tr>
     <tr>
+      <td>Mipsum</td>
+      <td>return random text from mipsum.</td>
+      <td>/mipsum.</td>
+    </tr>
+    <tr>
       <td>Qr</td>
       <td>Given a text it returns a qr code.</td>
       <td>/qr [term]: Returns a black and white qr code.</td>
