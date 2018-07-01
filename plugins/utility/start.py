@@ -5,7 +5,7 @@ def Function(msg, cmd):
 		return False
 	else:
 		keyboard_main = InlineKeyboardMarkup(inline_keyboard=[
-			[dict(text='👥 Add em grupos', url='https://t.me/{}?startgroup=iniciar'.format(settings.BOT_USERNAME)),
+			[dict(text='👥 Add em grupos', url='https://t.me/{}?startgroup=start'.format(settings.BOT_USERNAME)),
 			 dict(text='👁‍🗨 Canal Oficial', url='https://t.me/ProjectsStark')],
 			[InlineKeyboardButton(text='⚙ Comandos', callback_data='plugin_all')]
 		])
@@ -17,6 +17,6 @@ plugin = {
 		"^[/!](start)$"
 	],
 	'function': Function,
-	'name': "start",
+	'name': "Start",
 	'sudo': False,
 	}

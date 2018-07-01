@@ -9,7 +9,7 @@ plugin = {
 		"^[/!](dog) (.+)$"
 	],
 	'function': Function,
-	'name': "Nsfw",
-	'usage': '<code>/dog string</code>: plugin to write in the image of a dog',
+	'name': "Dog",
+	'usage': '<code>/dog [term]</code>: Receive a photo of the dog with your text',
 	'sudo': False,
 	}

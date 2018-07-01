@@ -8,7 +8,7 @@ plugin = {
 		"^[/!](chuck)$"
 	],
 	'function': Function,
-	'name': "joke",
-	'usage': '<code>/chuck</code>: plugin of joke',
+	'name': "Chuck",
+	'usage': '<code>/chuck</code>: Receive a random Chuck Norris message',
 	'sudo': False,
 	}

@@ -14,7 +14,7 @@ plugin = {
 		"^[/!](speak) (.+)$"
 	],
 	'function': Function,
-	'name': "speak",
-	'usage': '<code>/speak string</code>: plugin of speak',
+	'name': "Speak",
+	'usage': '<code>/speak [term]</code>: Turn your message into audio',
 	'sudo': False,
 	}

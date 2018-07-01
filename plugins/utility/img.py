@@ -9,6 +9,6 @@ plugin = {
 	],
 	'function': Function,
 	'name': "Img",
-	'usage': '<code>/img string</code>: plugin of img',
+	'usage': '<code>/img [term]</code>: Random search an image with Yandex API',
 	'sudo': False,
 	}

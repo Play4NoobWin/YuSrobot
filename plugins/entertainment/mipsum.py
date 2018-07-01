@@ -8,7 +8,7 @@ plugin = {
 		"^[/!](mipsum)$"
 	],
 	'function': Function,
-	'name': "mipsum",
-	'usage': '<code>/mipsum</code>: plugin of mipsum',
+	'name': "Mipsum",
+	'usage': '<code>/mipsum</code>: Random text from mipsum',
 	'sudo': False,
 	}

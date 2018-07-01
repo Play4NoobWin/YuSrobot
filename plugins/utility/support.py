@@ -1,6 +1,6 @@
 from main import settings, api 
 def Function(msg, cmd):
-	api.forwardMessage(settings.SUDO, msg['chat']['id'], msg['message_id'])
+	api.forwardMessage(settings.SUPPORT, msg['chat']['id'], msg['message_id'])
 	return 'Done'
 
 plugin = {
@@ -8,7 +8,7 @@ plugin = {
 		"^[/!](support) (.+)$"
 	],
 	'function': Function,
-	'name': "support",
-	'usage': '<code>/support string</code>: plugin of support',
+	'name': "Support",
+	'usage': '<code>/support [your problem]</code>: tell me your problem',
 	'sudo': False,
 	}

@@ -10,7 +10,7 @@ plugin = {
 		"^[/!](danb)$"
 	],
 	'function': Function,
-	'name': "danb",
-	'usage': '<code>/danb</code>: plugin of danb',
+	'name': "Danbooru",
+	'usage': '<code>/danb</code>: gets a random fresh image from danbooru',
 	'sudo': False,
 	}

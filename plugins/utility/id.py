@@ -7,7 +7,7 @@ plugin = {
 		"^[/!](id)$"
 	],
 	'function': Function,
-	'name': "id",
-	'usage': '<code>/id</code>: plugin of id',
+	'name': "Id",
+	'usage': '<code>/id</code>: Return your id and the chat id if you are in one',
 	'sudo': False,
 	}

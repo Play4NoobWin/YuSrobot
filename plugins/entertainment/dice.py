@@ -8,7 +8,7 @@ plugin = {
 		"^[/!](dice)$"
 	],
 	'function': Function,
-	'name': "dice",
-	'usage': '<code>/dice</code>: plugin of dice',
+	'name': "Dice",
+	'usage': '<code>/dice</code>: Send random number 2 up 12',
 	'sudo': False,
 	}

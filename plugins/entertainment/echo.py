@@ -6,7 +6,7 @@ plugin = {
 		"^[/!](echo) (.+)$"
 	],
 	'function': Function,
-	'name': "echo",
-	'usage': '<code>/echo string</code>: plugin of echo',
+	'name': "Echo",
+	'usage': '<code>/echo [term]</code>: Echoes the msg',
 	'sudo': False,
 	}

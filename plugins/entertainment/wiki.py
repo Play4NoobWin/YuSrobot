@@ -14,7 +14,7 @@ plugin = {
 		"^[/!](wiki) (.+)$"
 	],
 	'function': Function,
-	'name': "wiki",
-	'usage': '<code>/wiki string</code>: plugin of wikipedia',
+	'name': "Wiki",
+	'usage': '<code>/wiki [term]</code>: Searches wiki and send results from wikipedia',
 	'sudo': False,
 	}
