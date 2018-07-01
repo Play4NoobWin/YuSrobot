@@ -4,6 +4,7 @@ plugins.loadplugins()
 def on_msg(msg):
 		msg_from_id = msg['from']['id']
 		chat_id = msg['chat']['id']
+		if (not "text" in msg): msg['text'] = msg['action']
 		for aPlugin in plugins.plugins_all:
 				for patterns in aPlugin['patterns']:
 					cmd = re.search(patterns, msg['text'], re.IGNORECASE)
