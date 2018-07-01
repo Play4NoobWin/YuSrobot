@@ -1,4 +1,6 @@
-from main import api, argparse, handler
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+from main import api, argparse, handler, settings
 import time, subprocess
 PARSER = argparse.ArgumentParser(description='RUN COMMAND')
 PARSER.add_argument('--install', '-i', help='install dependency', action="store_true")
@@ -14,8 +16,9 @@ elif args.synchronize:
 	else:
 		print('\n\033[02;37mThis is not valid, check the valid commands by executing: "\033[01;31mpython run -h\033[02;37m"\n\033[00;37m')
 else:
+	print('\033[01;31mStarting bot. . .')
 	if __name__ == '__main__':
 		try:
-			api.message_loop({'chat' : handler, 'callback_query' : handler},run_forever='\033[01;31mStarting yus . . .\nOk started !\033[00;37m')
+			api.message_loop({'chat' : handler, 'callback_query' : handler}, run_forever='Ok! {} started !\033[00;37m'.format(settings.BOT_USERNAME))
 		except KeyboardInterrupt:
-			print('\n\n\033[01;31mEnding yus . . .\033[00;37m')
+			print('\n\n\033[01;31mEnding {} . . .\033[00;37m'.format(settings.BOT_USERNAME))
