@@ -1,0 +1,10 @@
+- Update vs 1.0
+  - build 1.0.1: adding system plugins
+  - build 1.0.2: adding order data recognition system
+  - build 1.0.3: improving code structure
+  - build 1.0.4: adding CONTRIBUTING.md
+  - build 1.0.5: update requirements
+  - build 1.0.6: update usage of plugins
+  - build 1.0.7: adding CHANGELOG.md
+  - build 1.0.7: adding keyboard.py and updating main file
+  - build 1.0.8: updating help and start.py
