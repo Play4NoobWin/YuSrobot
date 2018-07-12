@@ -5,22 +5,22 @@ start = { "inline_keyboard": [
   [{"callback_data": "plugin_all","text": '⚙ Command'}]]
 }
 plugin_all = { "inline_keyboard": [
-  [{"callback_data": "plugin_extra", "text": "🖇 Extra"}],
+  [{"callback_data": "plugin_admin", "text": "👤 admin"}],
   [{"callback_data": "plugin_utility", "text": "🛠 utility"}],
   [{"callback_data": "plugin_entertainment","text": "💈 entertainment"}]]
 }
-plugin_extra = { "inline_keyboard": [
+plugin_admin = { "inline_keyboard": [
   [{"callback_data": "plugin_utility", "text": "🛠 utility"}],
   [{"callback_data": "plugin_entertainment","text": "💈 entertainment"}],
   [{"callback_data": "plugin_all","text": "🔙"}]]
 }
 plugin_utility = { "inline_keyboard": [
-  [{"callback_data": "plugin_extra", "text": "🖇 Extra"}],
+  [{"callback_data": "plugin_admin", "text": "👤 admin"}],
   [{"callback_data": "plugin_entertainment","text": "💈 entertainment"}],
   [{"callback_data": "plugin_all","text": "🔙"}]]
 }
 plugin_entertainment = { "inline_keyboard": [
-  [{"callback_data": "plugin_extra", "text": "🖇 Extra"}],
+  [{"callback_data": "plugin_admin", "text": "👤 admin"}],
   [{"callback_data": "plugin_utility", "text": "🛠 utility"}],
   [{"callback_data": "plugin_all","text": "🔙"}]]
 }

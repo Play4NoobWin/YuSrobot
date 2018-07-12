@@ -6,7 +6,7 @@ def plugi(typeplugin=None, cmd_=None):
 	if typeplugin == "plugin_all": plugin = plugins.plugins_all
 	elif typeplugin == "plugin_entertainment": plugin = plugins.plugin_entertainment
 	elif typeplugin == "plugin_utility": plugin = plugins.plugin_utility
-	elif typeplugin == "plugin_extra": plugin = plugins.plugin_extra
+	elif typeplugin == "plugin_admin": plugin = plugins.plugin_admin
 	for aPlug in plugin:
 		if not aPlug["sudo"] == True and not aPlug["name"] == 'Start':
 				lista.append(aPlug)
@@ -26,8 +26,8 @@ def Function(msg, cmd):
 	if 'plugin_entertainment' in cmd[0] and 'cb' in msg:
 		try: api.editMessageText(tuple_id, plugi(cmd[0]), parse_mode='HTML',reply_markup=json.dumps(keyboard.plugin_entertainment))
 		except: return False
-	elif 'plugin_extra' in cmd[0] and 'cb' in msg:
-		try: api.editMessageText(tuple_id, plugi(cmd[0]), parse_mode='HTML',reply_markup=json.dumps(keyboard.plugin_extra))
+	elif 'plugin_admin' in cmd[0] and 'cb' in msg:
+		try: api.editMessageText(tuple_id, plugi(cmd[0]), parse_mode='HTML',reply_markup=json.dumps(keyboard.plugin_admin))
 		except: return False
 	elif 'plugin_utility' in cmd[0] and 'cb' in msg:
 		try: api.editMessageText(tuple_id, plugi(cmd[0]), parse_mode='HTML', reply_markup=json.dumps(keyboard.plugin_utility))
@@ -45,12 +45,12 @@ plugin = {
 	'patterns': [
 		"^[/!](help)$",
 		"^[/!](help) (all) (.+)$",
-		"^[/!](help) (extra) (.+)$",
+		"^[/!](help) (admin) (.+)$",
 		"^[/!](help) (entertainment) (.+)$",
 		"^[/!](help) (utility) (.+)$",
 		"^[/!](help) (.+)$",
 		"^###cb: (plugin_all)$",
-		"^###cb: (plugin_extra)$",
+		"^###cb: (plugin_admin)$",
 		"^###cb: (plugin_utility)$",
 		"^###cb: (plugin_entertainment)$",
   ],
