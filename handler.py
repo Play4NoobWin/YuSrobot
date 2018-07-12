@@ -13,10 +13,7 @@ def handler(msg):
 		msg['chat'] = msg['message']['chat']
 		msg['message'] = None
 		on_msg(msg)
-	if ('edit_date' in msg):
-		msg['message'] = msg['edit_date']
-		msg['edit_date'] = None
-		on_msg(msg)
+	if ('edit_date' in msg): pass
 	else:
 		msg['action'] = True
 		msg['text_action'] = True
