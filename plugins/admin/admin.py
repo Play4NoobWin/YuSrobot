@@ -10,26 +10,29 @@ def Function(msg, cmd):
 	if cmd[0] == "ban":
 		if (not "reply" in msg): return "<b>Reply to a user</b>"
 		elif chatAdmin(msg["chat"]["id"], msg['reply']["from"]["id"]) == True: return "<b>I can not ban an administrator</b>"
-		try:
-			api.kickChatMember (msg['chat']['id'], msg['reply_to_message']['from']['id'])
-			return "<b>Banned</b>"
-		except: return "<b>Not banned</b>"
+		else:
+			try:
+				api.kickChatMember (msg['chat']['id'], msg['reply']['from']['id'])
+				return "<b>Banned</b>"
+			except: return "<b>Not banned</b>"
 	elif cmd[0] == 'kick':
 		if (not "reply" in msg): return "<b>Reply to a user</b>"
 		elif chatAdmin(msg["chat"]["id"], msg['reply']["from"]["id"]) == True: return "<b>I can not kick an administrator</b>"
-		try:
-			api.kickChatMember (msg['chat']['id'], msg['reply_to_message']['from']['id'])
-			api.unbanChatMember (msg['chat']['id'], msg['reply_to_message']['from']['id'])
-			return "<b>Kicked</b>"
-		except: return "<b>Not kicked</b>"
+		else:
+			try:
+				api.kickChatMember (msg['chat']['id'], msg['reply']['from']['id'])
+				api.unbanChatMember (msg['chat']['id'], msg['reply']['from']['id'])
+				return "<b>Kicked</b>"
+			except: return "<b>Not kicked</b>"
 	elif cmd[0] == 'unban':
 		if (not "reply" in msg): return "<b>Reply to a user</b>"
 		elif chatAdmin(msg["chat"]["id"], msg['reply']["from"]["id"]) == True: return "<b>He is an administrator</b>"
-		try:
-			api.unbanChatMember (msg['chat']['id'], msg['reply_to_message']['from']['id'])
-			return "<b>Unbanned</b>"
-		except: return "<b>User is not banned</b>"
-		
+		else:
+			try:
+					api.unbanChatMember (msg['chat']['id'], msg['reply']['from']['id'])
+					return "<b>Unbanned</b>"
+			except: return "<b>User is not banned</b>"
+
 plugin = {
 'patterns': [
  "^[/!](ban)$",
