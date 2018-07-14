@@ -21,15 +21,15 @@ keyboardLIST['plugin_all'] = { "inline_keyboard": [
 keyboardLIST['plugin_admin'] = { "inline_keyboard": [
   [{"callback_data": "plugin_utility", "text": "🛠 utility"}],
   [{"callback_data": "plugin_entertainment","text": "💈 entertainment"}],
-  [{"callback_data": "plugin_all","text": "🔙"}]]
+  [{"callback_data": "plugin_all","text": "🔙 All Commands"}]]
 }
 keyboardLIST['plugin_utility'] = { "inline_keyboard": [
   [{"callback_data": "plugin_admin", "text": "👤 admin"}],
   [{"callback_data": "plugin_entertainment","text": "💈 entertainment"}],
-  [{"callback_data": "plugin_all","text": "🔙"}]]
+  [{"callback_data": "plugin_all","text": "🔙 All Commands"}]]
 }
 keyboardLIST['plugin_entertainment'] = { "inline_keyboard": [
   [{"callback_data": "plugin_admin", "text": "👤 admin"}],
   [{"callback_data": "plugin_utility", "text": "🛠 utility"}],
-  [{"callback_data": "plugin_all","text": "🔙"}]]
+  [{"callback_data": "plugin_all","text": "🔙 All Commands"}]]
 }
