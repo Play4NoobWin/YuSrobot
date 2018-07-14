@@ -5,8 +5,7 @@ def handler(msg):
 	if ('chat_instance' in msg):
 		msg['text'] = '###cb: {}'.format(msg['data'])
 		msg['old_text'] = msg['message']['text']
-		msg['old_date'] = msg['message']['date']
-		msg['date'] = 82888
+		msg['date'] = msg['message']['date']
 		msg['cb'] = True
 		msg['cb_id'] = msg['id']
 		msg['message_id'] = msg['message']['message_id']
