@@ -7,4 +7,4 @@ BOT = api.getMe()
 BOT_NAME = BOT['first_name']
 BOT_USERNAME = '@{}'.format(BOT['username'])
 SUDO = 1234556789
-CHANNEL = BOT_USERNAME
+CHANNEL = "add your channel"

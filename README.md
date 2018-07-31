@@ -11,7 +11,7 @@ This project has as a principle to be something simple and totally open to expos
 #### Dedications of this Project
 
 - [Synk](https://github.com/Synk0)
-[Tekxs](https://github.com/tekxs)
+- [Tekxs](https://github.com/tekxs)
 - [Yagop](https://github.com/yagop)
 - [Yandex](https://yandex.com/)
 - [Telepot](https://github.com/nickoala/telepot)

@@ -1,5 +1,4 @@
-from main import api
-import requests
+from main import api, requests
 def Function(msg, cmd):
 	api.sendPhoto(msg['chat']['id'],"http://dogr.io/{}.png?split=false&.png".format(cmd[1]), reply_to_message_id=msg["message_id"])
 	return False

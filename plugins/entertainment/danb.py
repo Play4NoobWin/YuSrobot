@@ -1,5 +1,4 @@
-from main import api
-import random
+from main import api, random
 def Function(msg, cmd):
 	danb=(random.randint(1,999999))
 	api.sendPhoto(msg['chat']['id'],"https://danbooru.donmai.us/posts/{}".format(danb), reply_to_message_id=msg["message_id"])

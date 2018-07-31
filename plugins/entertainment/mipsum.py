@@ -1,5 +1,4 @@
-from main import api
-import requests
+from main import api, requests
 def Function(msg, cmd):
 	return requests.get('https://mipsum.herokuapp.com/frases/random').json()['frase']
 
