@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #-*- coding: utf-8 -*-
-import settings, argparse, telepot, re, plugins, sys, json, keyboard, gtts, requests, os, wikipedia
+import settings, argparse, telepot, re, plugins, sys, json, keyboard, gtts, requests, os, wikipedia, random
 api = settings.api
 plugins.loadplugins()
 def viewer(msg):
