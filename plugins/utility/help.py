@@ -26,14 +26,22 @@ def Function(msg, cmd):
 			try: api.editMessageText((msg['chat']['id'], msg['message_id']), plugi(cmd[0]),
 															 parse_mode='HTML',reply_markup=keyboard.loadkeyboard(cmd[0]))
 			except: return False
-	elif (len(cmd) == 1): return plugi()
+	elif (len(cmd) <= 1):
+		if (cmd[0] == "start"):
+			if msg['chat']['type'] != 'private': return False
+			else:
+				start="Hello, I'm a simple bot I'm still learning.\nWhat can I do for you right now?\n\nSend /help right now to know!"
+				api.sendMessage(msg['chat']['id'],"{}".format(start), "HTML", reply_markup=keyboard.loadkeyboard('start'))
+				return False
+		else:
+			return plugi()
 	else:
 			try:
 				 return plugi(arg=cmd[1])
 			except: return 'You typed something invalid.'
 plugin = {
 	'patterns': [
-		"^[/!](help)$",
+		"^[/!]((?:help)|(?:start))$",
 		"^[/!](help) ((\d+)|(\w+))$",
 		"^###cb: ((?:plugin_all)|(?:plugin_admin)|(?:plugin_utility)|(?:plugin_entertainment))$",
   ],
