@@ -6,8 +6,7 @@ def Function(msg, cmd):
 
 plugin = {
 	'patterns': [
-		"^[/!](boobs)$",
-		"^[/!](butts)$"
+		"^[/!]((?:boobs)|(?:butts))$"
 	],
 	'function': Function,
 	'name': "Nsfw",
