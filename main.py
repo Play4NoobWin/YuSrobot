@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 #-*- coding: utf-8 -*-
 import settings, argparse, telepot, re, plugins, sys, json, keyboard, gtts, requests, os, wikipedia, random
+from DataBase import FileVerification, WriteinFile, ReadFile, datahandler
 api = settings.api
 plugins.loadplugins()
 def viewer(msg):
