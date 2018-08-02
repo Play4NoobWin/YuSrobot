@@ -1,26 +1,22 @@
-#!/usr/bin/env python3
-#-*- coding: utf-8 -*-
-import settings, argparse, telepot, re, plugins, sys, json, keyboard, gtts, requests, os, wikipedia, random
+import settings, argparse, telepot, re, plugins, sys, json, keyboard, gtts, random, os, wikipedia, requests
 from DataBase import FileVerification, WriteinFile, ReadFile, datahandler
 api = settings.api
 plugins.loadplugins()
 def viewer(msg):
-	printing = '''\033[37m\033[36m{user} \033[37m(\033[31m{user_id}\033[37m) send: {text}
-* Sent from a {chat_type} (ID: \033[31m{chat_id}\033[37m)'''.format(
-	user=msg['from']['first_name'],
-	user_id=msg['from']['id'],
-	text=msg['text'],
-	chat_type=msg['chat']['type'],
-	chat_id=msg['chat']['id'])
+	printing = ''
+	if (('from' in msg) == True):
+		if (('first_name' in msg['from']) == True): printing += '\033[36m{} '.format(msg['from']['first_name'],)
+		if (('id' in msg['from']) == True): printing += '\033[37m(\033[31m{}\033[37m) '.format(msg['from']['id'])
+	if (('text' in msg) == True): printing +='send: {} '.format(msg['text'])
+	if 'chat' in msg:
+		if (('type' in msg['chat']) == True): printing += '\n* Sent from a {} '.format(msg['chat']['type'])
+		if (('id' in msg['chat']) == True): printing += '(ID: \033[31m{}\033[37m)'.format(msg['chat']['id'])
 	try: print(printing)
 	except UnicodeEncodeError: print(printing.encode("ascii", "ignore").decode("ascii"))
 	sys.stdout.flush()
 def on_msg(msg):
-		msg_from_id = msg['from']['id']
-		chat_id = msg['chat']['id']
 		if (not "text" in msg): msg['text'] = msg['action']
 		viewer(msg)
-		if (not "text" in msg): msg['text'] = msg['action']
 		for aPlugin in plugins.plugins_all:
 				for patterns in aPlugin['patterns']:
 					cmd = re.search(patterns, msg['text'], re.IGNORECASE)
@@ -28,16 +24,14 @@ def on_msg(msg):
 							if cmd.groups(): cmd = cmd.groups()
 							else: cmd = cmd.group()
 							if aPlugin['sudo'] == True:
-								if msg_from_id in settings.SUDO: aPlugin['function'](msg, cmd)
-								else: api.sendMessage(chat_id, "Hey, you can not tell me!")
+								if msg['from']['id'] in settings.SUDO: aPlugin['function'](msg, cmd)
+								else: api.sendMessage(msg['chat']['id'], "Hey, you can not tell me!")
 							else:
-									try:
-											resp = aPlugin['function'](msg, cmd)
-									except Exception as error:
-											print(error)
+									try: resp = aPlugin['function'](msg, cmd)
+									except Exception as error: print(error)
 									else:
 											if (resp != None) and (resp != False):
-												api.sendMessage(chat_id, resp, parse_mode="HTML", reply_to_message_id=msg["message_id"])
+												api.sendMessage(msg['chat']['id'], resp, parse_mode="HTML", reply_to_message_id=msg["message_id"])
 							break
 
 import handler
