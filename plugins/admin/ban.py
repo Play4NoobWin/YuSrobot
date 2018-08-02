@@ -19,6 +19,6 @@ plugin = {
 ],
 	'function': Function,
 	'name': "Ban",
-	'usage': False,
+	'usage': '<code>/ban</code>: To ban a user',
 	'sudo': False,
 }

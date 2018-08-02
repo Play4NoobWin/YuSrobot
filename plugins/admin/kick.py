@@ -20,6 +20,6 @@ plugin = {
 ],
 	'function': Function,
 	'name': "Kick",
-	'usage': False,
+	'usage': '<code>/kick</code>: To kick a user',
 	'sudo': False,
 }

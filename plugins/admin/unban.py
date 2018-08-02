@@ -6,7 +6,7 @@ def Function(msg, cmd):
 		if (not "reply" in msg): return "<b>Reply to a user</b>"
 		elif chatAdmin(msg["chat"]["id"], msg['reply']["from"]["id"]) == True: return "<b>He is an administrator</b>"
 		else:
-			try:
+			try: 
 				api.unbanChatMember (msg['chat']['id'], msg['reply']['from']['id'])
 				return "<b>Unbanned</b>"
 			except: return "<b>User is not banned</b>"
@@ -19,6 +19,6 @@ plugin = {
 ],
 	'function': Function,
 	'name': "Unban",
-	'usage': False,
+	'usage': '<code>/unban</code>: To unban a user',
 	'sudo': False,
 }
