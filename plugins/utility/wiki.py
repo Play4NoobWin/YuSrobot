@@ -14,6 +14,7 @@ plugin = {
 	],
 	'function': Function,
 	'name': "Wiki",
+	'admin': False,
 	'usage': '<code>/wiki [term]</code>: Searches wiki and send results from wikipedia',
 	'sudo': False,
 	}

@@ -26,6 +26,7 @@ plugin = {
 	],
 	'function': Function,
 	'name': "Id",
+	'admin': False,
 	'usage': '<code>/id</code>: Return your id and the chat id if you are in one',
 	'sudo': False,
 	}

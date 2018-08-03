@@ -7,6 +7,7 @@ plugin = {
 	],
 	'function': Function,
 	'name': "Echo",
+	'admin': False,
 	'usage': '<code>/echo [term]</code>: Echoes the msg',
 	'sudo': False,
 	}

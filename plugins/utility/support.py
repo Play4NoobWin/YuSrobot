@@ -9,6 +9,7 @@ plugin = {
 	],
 	'function': Function,
 	'name': "Support",
+	'admin': False,
 	'usage': '<code>/support [your problem]</code>: tell me your problem',
 	'sudo': False,
 	}

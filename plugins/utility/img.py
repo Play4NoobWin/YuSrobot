@@ -9,6 +9,7 @@ plugin = {
 	],
 	'function': Function,
 	'name': "Img",
+	'admin': False,
 	'usage': '<code>/img [term]</code>: Random search an image with Yandex API',
 	'sudo': False,
 	}

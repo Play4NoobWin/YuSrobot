@@ -10,6 +10,7 @@ plugin = {
 	],
 	'function': Function,
 	'name': "Nsfw",
+	'admin': False,
 	'usage': '<code>/boobs</code>: Get a boobs NSFW image\n<code>/butts</code>: Get a butts NSFW image',
 	'sudo': False,
 	}

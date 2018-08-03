@@ -14,6 +14,7 @@ plugin = {
 	],
 	'function': Function,
 	'name': "Speak",
+	'admin': False,
 	'usage': '<code>/speak [term]</code>: Turn your message into audio',
 	'sudo': False,
 	}

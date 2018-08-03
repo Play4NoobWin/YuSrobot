@@ -9,6 +9,7 @@ plugin = {
 	],
 	'function': Function,
 	'name': "Dice",
+	'admin': False,
 	'usage': '<code>/dice</code>: Send random number 2 up 12',
 	'sudo': False,
 	}

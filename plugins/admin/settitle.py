@@ -15,6 +15,7 @@ plugin = {
 ],
 	'function': Function,
 	'name': "Settitle",
+	'admin': True,
 	'usage': '<code>/settitle [name]</code>: To set new title for group',
 	'sudo': False,
 }

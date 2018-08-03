@@ -41,7 +41,8 @@ plugin = {
 		"^[/!$](debug) (user)$"
 	],
 	'function': Function,
-	'name': "Admin",
+	'name': "Sudo",
 	'sudo': True,
+	'admin': False,
 	'usage': False,
 	}

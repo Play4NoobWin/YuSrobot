@@ -9,6 +9,7 @@ plugin = {
 	],
 	'function': Function,
 	'name': "QrCode",
+	'admin': False,
 	'usage': '<code>/qr [term]</code>: Returns a black and white qr code',
 	'sudo': False,
 	}

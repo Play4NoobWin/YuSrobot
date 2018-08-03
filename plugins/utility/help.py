@@ -47,6 +47,7 @@ plugin = {
   ],
 	'function': Function,
 	'name': "Help",
+	'admin': False,
 	'sudo': False, 
 	'usage': '<code>/help</code>: Show list of plugins\n<code>/help name or number</code>: Commands for that plugin',
 	}

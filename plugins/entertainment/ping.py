@@ -7,6 +7,7 @@ plugin = {
 	],
 	'function': Function,
 	'name': "Ping",
+	'admin': False,
 	'usage': '<code>/ping</code>: Check if the bot is online',
 	'sudo': False,
 	}

@@ -9,6 +9,7 @@ plugin = {
 	],
 	'function': Function,
 	'name': "Dog",
+	'admin': False,
 	'usage': '<code>/dog [term]</code>: Receive a photo of the dog with your text',
 	'sudo': False,
 	}

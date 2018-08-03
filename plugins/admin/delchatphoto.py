@@ -15,6 +15,7 @@ plugin = {
 ],
 	'function': Function,
 	'name': "Delchatphoto",
+	'admin': True,
 	'usage': '<code>/delchatphoto</code>: To delete photo of chat',
 	'sudo': False,
 }

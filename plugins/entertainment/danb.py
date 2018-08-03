@@ -10,6 +10,7 @@ plugin = {
 	],
 	'function': Function,
 	'name': "Danbooru",
+	'admin': False,
 	'usage': '<code>/danb</code>: gets a random fresh image from danbooru',
 	'sudo': False,
 	}

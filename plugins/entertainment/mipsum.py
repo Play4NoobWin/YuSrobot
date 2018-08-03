@@ -8,6 +8,7 @@ plugin = {
 	],
 	'function': Function,
 	'name': "Mipsum",
+	'admin': False,
 	'usage': '<code>/mipsum</code>: Random text from mipsum',
 	'sudo': False,
 	}
